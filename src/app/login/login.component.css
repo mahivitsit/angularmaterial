@@ -1,0 +1,41 @@
+.margt50
+{
+	margin-top:50px;
+}
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+.center
+{
+	display:block;
+	margin:auto;
+	text-align:center;
+}
+.block
+{
+	width:600px;
+	margin:0px auto;
+	display:block;
+}
+.clr
+{
+	background-color:orange;
+	padding:5px;
+	color:#fff;
+	text-align:center;
+	width:540px;
+	display:block;
+	margin:0px auto;
+	margin-bottom:20px;
+}
+.example-button-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}

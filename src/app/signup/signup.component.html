@@ -1,0 +1,48 @@
+<div class="margt50">
+<md-card class="block">
+<div class="center">
+<h2 class="clr">Signup Here</h2>
+<form class="example-form center">
+	<md-form-field class="example-full-width">
+    <input mdInput placeholder="First Name" [formControl]="firstNameFormControl">
+    <md-error *ngIf="firstNameFormControl.hasError('required')">
+      First Name <strong>required</strong>
+    </md-error>
+  </md-form-field>
+  <md-form-field class="example-full-width">
+    <input mdInput placeholder="Last Name" [formControl]="lastNameFormControl">
+    <md-error *ngIf="lastNameFormControl.hasError('required')">
+      Last Name <strong>required</strong>
+    </md-error>
+  </md-form-field>
+  <md-form-field class="example-full-width">
+    <input mdInput placeholder="Email" [formControl]="emailFormControl">
+    <md-error *ngIf="emailFormControl.hasError('pattern')">
+      Please enter a valid email address
+    </md-error>
+    <md-error *ngIf="emailFormControl.hasError('required')">
+      Email is <strong>required</strong>
+    </md-error>
+  </md-form-field>
+  <md-form-field class="example-full-width">
+    <input mdInput placeholder="Mobile No." [formControl]="mobileFormControl">
+    <md-error *ngIf="mobileFormControl.hasError('pattern')">
+      Please enter a valid mobile number
+    </md-error>
+    <md-error *ngIf="mobileFormControl.hasError('required')">
+      Mobile Number is <strong>required</strong>
+    </md-error>
+  </md-form-field>
+  <md-form-field class="example-full-width">
+    <input type="password" mdInput placeholder="Password" [formControl]="passwordFormControl">
+    <md-error *ngIf="passwordFormControl.hasError('required')">
+      Password <strong>required</strong>
+    </md-error>
+  </md-form-field>
+  <div>
+   <button md-raised-button color="primary">Signup</button>
+  </div>
+</form>
+</div>
+</md-card>
+</div>
